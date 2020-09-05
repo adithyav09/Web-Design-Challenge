@@ -17,7 +17,7 @@
 <body style="background-color:rgb(240, 240, 240);">
     <!--Navbar adjustments-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand bg-info text-white" href="#">Latitude</a>
+        <a class="navbar-brand bg-info text-white p-2 rounded" href="../index.html">Latitude</a>
       </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,19 +33,19 @@
                   Plots
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <a class="dropdown-item" href="#!">Temperature</a>
-                    <a class="dropdown-item" href="#!">Cloudiness</a>
-                    <a class="dropdown-item" href="#!">Wind Speed</a>
-                    <a class="dropdown-item" href="#!">Humidity</a>
+                  <a class="dropdown-item" href="temp.html">Temperature</a>
+                  <a class="dropdown-item" href="cloud.html">Cloudiness</a>
+                  <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
                 </div>
               </div>
               
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Comparision</a>
+              <a class="nav-link" href="comparison.html">Comparison</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Data</a>
+              <a class="nav-link" href="data.html">Data</a>
             </li>
           </ul>
         </div>
@@ -55,17 +55,23 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="col-md-12 mt-5 bg-white">
-                    <h3>Humidity</h3>
+                    <h3 class = "text-info">Humidity</h3>
                     <hr>
-                    <img src="/Resources/assets/images/Fig1.png" width="100%" alt="temperature">
+                    <img src="/Resources/assets/images/Fig2.png" width="100%" alt="temperature">
                     <br>
-                    <p>As expected, the weather becomes significantaly warmer as one approaches the equator (Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+                    <p>
+                      Looking at the humidity percentage displayed by the graph, there seems to be slightly less
+                      humidity within the southern hemipshere (depicted with negative degree latitudes) compared to 
+                      the northern hemipshere. However, intrestingly enough, there are potential outliers in the northern
+                      hemipshere that have 0% humidity which is somewhat skeptical.
+              
+                    </p>
                 </div>
             </div>
             <!--visualizations container -->
             <div class="col-lg-4">
                 <div class="col-md-12 mt-5 bg-white">
-                    <h3>Visualizations</h3>
+                    <h3 class = "text-info">Visualizations</h3>
                     <hr>
                     <div class="row">
                         <div class="col-md-6">
@@ -73,15 +79,15 @@
                         </div>
                         
                         <div class="col-md-6">
-                            <a href="humidity.html"><img src="/Resources/assets/images/Fig1.png" width="100%" alt="humidity"></a>
+                            <a href="humidity.html"><img src="/Resources/assets/images/Fig2.png" width="100%" alt="humidity"></a>
                         </div>
                     
                         <div class="col-md-6">
-                            <a href="cloudiness.html"><img src="/Resources/assets/images/Fig1.png" width="100%" alt="cloudiness"></a>
+                            <a href="cloud.html"><img src="/Resources/assets/images/Fig3.png" width="100%" alt="cloudiness"></a>
                         </div>
                         
                         <div class="col-md-6">
-                            <a href="windspeed.html"><img src="/Resources/assets/images/Fig1.png" width="100%" alt="windspeed"></a>
+                            <a href="windspeed.html"><img src="/Resources/assets/images/Fig4.png" width="100%" alt="windspeed"></a>
                         </div>
                     </div>
                 </div>
